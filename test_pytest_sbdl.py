@@ -197,7 +197,7 @@ def test_read_parties_row(spark, expected_party_rows):
 def test_read_parties(spark, parties_list):
     expected_df = spark.createDataFrame(parties_list)
     actual_df = DataLoader.read_parties(spark, "LOCAL", False, None)
-    assert_df_equality(expected_df, actual_df, ignore_schema=True)
+    assert_df_equality(expected_df, actual_df, True)
 
 
 def test_read_party_schema(spark, parties_list):
@@ -210,7 +210,7 @@ def test_get_contract(spark, expected_contract_df):
     accounts_df = DataLoader.read_accounts(spark, "LOCAL", False, None)
     actual_contract_df = Transformations.get_contract(accounts_df)
     assert expected_contract_df.collect() == actual_contract_df.collect()
-    assert_df_equality(expected_contract_df, actual_contract_df, ignore_schema=True)
+    assert_df_equality(expected_contract_df, actual_contract_df, True)
 
 
 def test_kafka_kv_df(spark, expected_final_df):

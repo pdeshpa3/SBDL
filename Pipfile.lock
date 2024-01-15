@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "ba86a8615c59de2ad8c0875952d057623f93b5603822b00feece8529a51fc039"
+            "sha256": "eafe6f6a57947931305ceceb4d819d01a53227ff4d91cfe3e838a9cb702de166"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -16,6 +16,15 @@
         ]
     },
     "default": {
+        "chispa": {
+            "hashes": [
+                "sha256:9b9d3c5c3096edd938fc96796897f02e46449e392b445efecfaabbc66b7d8d1f",
+                "sha256:ba79aef7b45f524dbdb164f225f18401bc24f703abd486edc591e6fb216d2fd3"
+            ],
+            "index": "pypi",
+            "markers": "python_version >= '3.7' and python_version < '4.0'",
+            "version": "==0.9.4"
+        },
         "iniconfig": {
             "hashes": [
                 "sha256:2d91e135bf72d31a410b17c16da610a82cb55f6b0477d1a902134b24a455b8b3",
